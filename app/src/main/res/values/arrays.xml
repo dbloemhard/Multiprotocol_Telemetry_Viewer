@@ -1,0 +1,12 @@
+<resources>
+    <!-- Minute Call additional call out -->
+    <string-array name="callout_array">
+        <item>--None--</item>
+        <item>Voltage 1</item>
+        <item>Voltage 2</item>
+        <item>RSSI</item>
+        <item>Transmitter RSSI</item>
+        <item>Link Quality</item>
+        <item>Transmitter Link Quality</item>
+    </string-array>
+</resources>

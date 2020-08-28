@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.tokyo_dom.mpmtelemetry.TelemetryView"
+    tools:ignore="AlwaysShowAction">
+    <item
+        android:id="@+id/action_connection"
+        android:icon="@drawable/ic_baseline_bluetooth_disabled_24_white"
+        android:orderInCategory="100"
+        android:title="@string/action_connection"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_baseline_settings_white_24"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always" />
+</menu>

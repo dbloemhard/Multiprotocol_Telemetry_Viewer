@@ -1,0 +1,105 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_baseline_settings_bluetooth_24"
+        app:title="@string/connection_settings_header">
+
+        <ListPreference
+            app:dialogTitle="@string/address_dialog_title"
+            app:key="address"
+            app:title="@string/address_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:dependency="address"
+            app:key="autoconnect"
+            app:summaryOff="@string/autoconnect_summary_off"
+            app:summaryOn="@string/autoconnect_summary_on"
+            app:title="@string/autoconnect_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@drawable/ic_outline_notifications_24"
+        app:title="@string/alarms_settings_header">
+
+        <SwitchPreferenceCompat
+            app:key="connectionalarm"
+            app:title="@string/connectionalarm_title" />
+
+        <SwitchPreferenceCompat
+            app:key="v1alarm"
+            app:title="@string/v1alarm_title" />
+
+        <EditTextPreference
+            android:defaultValue="3.2"
+            android:inputType="numberDecimal"
+            app:dependency="v1alarm"
+            app:key="v1alarmval"
+            app:title="@string/voltagealarmval_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="v2alarm"
+            app:title="@string/v2alarm_title" />
+
+        <EditTextPreference
+            android:defaultValue="3.2"
+            android:inputType="numberDecimal"
+            app:dependency="v2alarm"
+            app:key="v2alarmval"
+            app:title="@string/voltagealarmval_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="rssialarm"
+            app:title="@string/rssialarm_title" />
+
+        <EditTextPreference
+            android:defaultValue="40"
+            android:inputType="number"
+            app:dependency="rssialarm"
+            app:key="rssialarmval"
+            app:title="@string/signalalarmval_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="txrssialarm"
+            app:title="@string/txrssialarm_title" />
+
+        <EditTextPreference
+            android:defaultValue="40"
+            android:inputType="number"
+            app:dependency="txrssialarm"
+            app:key="txrssialarmval"
+            app:title="@string/signalalarmval_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="lqialarm"
+            app:title="@string/lqialarm_title" />
+
+        <EditTextPreference
+            android:defaultValue="40"
+            android:inputType="number"
+            app:dependency="lqialarm"
+            app:key="lqialarmval"
+            app:title="@string/lqialarmval_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="txlqialarm"
+            app:title="@string/txlqialarm_title" />
+
+        <EditTextPreference
+            android:defaultValue="40"
+            android:inputType="number"
+            app:dependency="txlqialarm"
+            app:key="txlqialarmval"
+            app:title="@string/lqialarmval_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
